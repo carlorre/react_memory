@@ -1,0 +1,19 @@
+.input-form {
+  color: white;
+  display: flex;
+}
+
+.text-input {
+  font-size: 20px;
+}
+
+.drop-down {
+  width: 150px;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.form-submit {
+  font-size: 20px;
+  padding: 0 10px;
+}

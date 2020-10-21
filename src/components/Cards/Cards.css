@@ -1,0 +1,24 @@
+.card {
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.cover {
+  height: 100%;
+  width: 100%;
+  background-color: #213861;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px rgb(38, 33, 33);
+}
+
+.cover:hover {
+  box-shadow: 0 0 1px white inset;
+  background-color: #5e6eae;
+}
+

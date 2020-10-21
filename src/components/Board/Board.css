@@ -1,0 +1,20 @@
+.card-container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.small {
+  max-width: 630px;
+}
+
+.medium {
+  max-width: 950px;
+}
+
+.large {
+  max-width: 1300px;
+
+}
