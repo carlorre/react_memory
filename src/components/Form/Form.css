@@ -5,15 +5,28 @@
 
 .text-input {
   font-size: 20px;
+  border-radius: 5px;
+  padding-left: 2px;
+}
+
+.text-input:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.text-input:focus {
+  background-color: rgb(235, 235, 235);
+  outline: none
 }
 
 .drop-down {
   width: 150px;
   margin: 0 10px;
   font-size: 20px;
+  border-radius: 5px;
 }
 
 .form-submit {
   font-size: 20px;
-  padding: 0 10px;
+  padding: 1px 10px;
+  border-radius: 5px;
 }

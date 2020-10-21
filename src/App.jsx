@@ -36,7 +36,7 @@ const App = () => {
   };
 
   const getDataFromAPI = () => {
-    const unsplash = new Unsplash({ accessKey: process.env.REACT_APP_UNSPLASH_KEY });
+    const unsplash = new Unsplash({ accessKey: 'hpShJU1R2C4yM5EmHf4HvrCe0Pl89lheGTRHxu9gPD8' });
     const page = Math.floor(Math.random() * 10);
     unsplash.search.photos(userInput, page, size)
       .then((res) => res.json())
