@@ -1,6 +1,6 @@
 import './App.css';
+import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import Unsplash from 'unsplash-js';
 import Board from './components/Board/Board';
 import Form from './components/Form/Form';
 
@@ -36,11 +36,12 @@ const App = () => {
   };
 
   const getDataFromAPI = () => {
-    const unsplash = new Unsplash({ accessKey: 'hpShJU1R2C4yM5EmHf4HvrCe0Pl89lheGTRHxu9gPD8' });
     const page = Math.floor(Math.random() * 10);
-    unsplash.search.photos(userInput, page, size)
-      .then((res) => res.json())
-      .then((res) => createImageArray(res.results));
+    axios.get('https://api.unsplash.com/search/photos/', {
+      params: { query: userInput, page, size },
+      headers: { Authorization: 'Client-ID BH6Y3NRJ0W31zYjZdwzr1lc3rdFbuIerxjpDR1IGW0s' },
+    })
+      .then((res) => createImageArray(res.data.results));
   };
 
   const isMatch = (index) => {
