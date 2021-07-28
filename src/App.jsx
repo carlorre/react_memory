@@ -38,7 +38,7 @@ const App = () => {
   const getDataFromAPI = () => {
     const page = Math.floor(Math.random() * 10);
     axios.get('https://api.unsplash.com/search/photos/', {
-      params: { query: userInput, page, size },
+      params: { query: userInput, page, per_page: size },
       headers: { Authorization: 'Client-ID BH6Y3NRJ0W31zYjZdwzr1lc3rdFbuIerxjpDR1IGW0s' },
     })
       .then((res) => createImageArray(res.data.results));
